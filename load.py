@@ -13,5 +13,5 @@ def init():
 	loaded_model.load_weights("model_weights.h5")
 	print("Loaded Model from disk")
 	#compile and evaluate loaded model
-	loaded_model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
+	loaded_model.compile(loss='categorical_crossentropy',optimizer='nadam',metrics=['accuracy'])
 	return loaded_model
